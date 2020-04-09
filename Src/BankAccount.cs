@@ -32,7 +32,7 @@ namespace SecondRepoCore
         {
             if (amount > m_balance)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                //throw new ArgumentOutOfRangeException("amount");
             }
 
             if (amount < 0)
