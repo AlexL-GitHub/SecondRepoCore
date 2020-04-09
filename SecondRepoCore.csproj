@@ -5,6 +5,11 @@
     <UserSecretsId>61e65f33-de01-4048-b070-019f94c1c23d</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
+
 
 
 </Project>
