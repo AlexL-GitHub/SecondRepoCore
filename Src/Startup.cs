@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Autofac.Extensions;
 
 namespace SecondRepoCore
 {
@@ -23,6 +24,16 @@ namespace SecondRepoCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //services.AddTransient(typeof(ICar));
+            Type type = typeof(Car);
+            type = typeof(ICar);
+            type = typeof(List<ICar>);
+            type = typeof(List<>);
+
+            //services.AddScoped(typeof(ICar), typeof(Car));
+            services.AddScoped(typeof(ICar), typeof(SpeedCar));
+
+            //services.BuildServiceProvider().
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

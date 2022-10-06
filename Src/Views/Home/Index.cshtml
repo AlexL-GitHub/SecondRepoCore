@@ -1,5 +1,7 @@
-﻿@{
+﻿@inject ICar myCar
+@{
     ViewData["Title"] = "Home Page";
+    int x = myCar.Prepair("engineName");
 }
 
 <div class="text-center">

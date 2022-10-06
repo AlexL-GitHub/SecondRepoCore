@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace SecondRepoCore
 {
-    public class Car: ICar
+    public class SpeedCar : ICar
     {
         public int Prepair(string engineName)
         {
-
-            return -1;
+            return 5;
         }
     }
 }

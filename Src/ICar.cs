@@ -5,12 +5,8 @@ using System.Threading.Tasks;
 
 namespace SecondRepoCore
 {
-    public class Car: ICar
+    public interface ICar
     {
-        public int Prepair(string engineName)
-        {
-
-            return -1;
-        }
+        int Prepair(string engineName);
     }
 }
